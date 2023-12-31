@@ -1,5 +1,3 @@
-
-
 # Final App
 
 [Tutorial](https://nextjs-tutorial-production.vercel.app/)
@@ -505,8 +503,7 @@ const DrinksList = ({ drinks }) => {
         <li key={drink.idDrink}>
           <Link
             href={`/drinks/${drink.idDrink}`}
-            className="text-xl font-medium"
-          >
+            className="text-xl font-medium">
             {drink.strDrink}
           </Link>
         </li>
@@ -704,8 +701,7 @@ const DrinksList = ({ drinks }) => {
         <li key={drink.idDrink}>
           <Link
             href={`/drinks/${drink.idDrink}`}
-            className="text-xl font-medium"
-          >
+            className="text-xl font-medium">
             <div className="relative h-48 mb-4">
               <Image
                 src={drink.strDrinkThumb}
@@ -1021,6 +1017,7 @@ const TaskList = async () => {
       createdAt: "desc",
     },
   });
+
   if (tasks.length === 0)
     return <h2 className="mt-8 font-medium text-lg">No tasks to show</h2>;
   return (
@@ -1028,13 +1025,11 @@ const TaskList = async () => {
       {tasks.map((task) => (
         <li
           key={task.id}
-          className="flex justify-between items-center px-6 py-4 mb-4 border border-base-300 rounded-lg shadow-lg"
-        >
+          className="flex justify-between items-center px-6 py-4 mb-4 border border-base-300 rounded-lg shadow-lg">
           <h2
             className={`text-lg capitalize ${
               task.completed ? "line-through" : null
-            }`}
-          >
+            }`}>
             {task.content}
           </h2>
           <div className="flex gap-6 items-center">
@@ -1291,8 +1286,7 @@ const EditForm = ({ task }) => {
   return (
     <form
       action={editTask}
-      className="max-w-sm bg-base-100 p-12 border border-base-300  rounded-lg"
-    >
+      className="max-w-sm bg-base-100 p-12 border border-base-300  rounded-lg">
       <input type="hidden" name="id" value={id} />
       {/* content */}
 
@@ -1350,8 +1344,7 @@ const SubmitButton = () => {
     <button
       type="submit"
       className="btn join-item btn-primary"
-      disabled={pending}
-    >
+      disabled={pending}>
       {pending ? "please wait... " : "create task"}
     </button>
   );
@@ -1411,8 +1404,7 @@ const SubmitButton = () => {
     <button
       type="submit"
       className="btn join-item btn-primary"
-      disabled={pending}
-    >
+      disabled={pending}>
       {pending ? "please wait... " : "create task"}
     </button>
   );
@@ -1587,8 +1579,7 @@ const SubmitBtn = () => {
     <button
       type="submit"
       className="btn btn-primary join-item"
-      disabled={pending}
-    >
+      disabled={pending}>
       {pending ? "please wait..." : "create task"}
     </button>
   );
@@ -1823,4 +1814,4 @@ export const dynamic = "force-dynamic";
 
 - sign up for account
 - create github repo
-cd 
+  cd
