@@ -38,6 +38,7 @@ const PrismaExample = async () => {
           </h2>
         );
       })}
+      {/* haha */}
     </div>
   );
 };
