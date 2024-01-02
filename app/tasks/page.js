@@ -1,6 +1,7 @@
 import TaskForm from "@/components/TaskForm";
 import TaskList from "@/components/TaskList";
 import { getAllTasks } from "@/utils/action";
+export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Learning Nextjs 14 | Tasks",
